@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: var(--color-bg)
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient__bg {
+
+        /* ff 3.6+ */
+        background:-moz-linear-gradient(90deg, rgba(168, 0, 0, 1) 0%, rgba(212, 123, 0, 1) 100%, rgba(238, 130, 238, 1) 100%); 
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-linear-gradient(90deg, rgba(168, 0, 0, 1) 0%, rgba(212, 123, 0, 1) 100%, rgba(238, 130, 238, 1) 100%);
+    
+        /* opera 11.10+ */
+        background:-o-linear-gradient(90deg, rgba(168, 0, 0, 1) 0%, rgba(212, 123, 0, 1) 100%, rgba(238, 130, 238, 1) 100%);
+    
+        /* ie 6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#A80000', GradientType=0 );
+    
+        /* ie 10+ */
+        background:-ms-linear-gradient(90deg, rgba(168, 0, 0, 1) 0%, rgba(212, 123, 0, 1) 100%, rgba(238, 130, 238, 1) 100%);
+    
+        /* global 94%+ browsers support */
+        background:linear-gradient(90deg, rgba(168, 0, 0, 1) 0%, rgba(212, 123, 0, 1) 100%, rgba(238, 130, 238, 1) 100%);
+    
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.section__padding {
+    padding: 4 rem 6 rem;
+}
+
+.section__margin {
+    padding: 4 rem 6 rem;
+}
+
+.slide-rotate-ver-right {
+	-webkit-animation: slide-rotate-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-rotate-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ 
+@keyframes slide-rotate-ver-right {
+    0% {
+      -webkit-transform: translateX(0) rotateY(0);
+              transform: translateX(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateX(150px) rotateY(-90deg);
+              transform: translateX(150px) rotateY(-90deg);
+    }
+}
+  
+@media screen and (max-width: 700px) {
+    .section__padding{
+        padding: 4 rem ;
+    }
+
+    .section__margin{
+        padding: 4 rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section__padding{
+        padding: 4 rem 2 rem ;
+    }
+
+    .section__margin{
+        padding: 4 rem 2 rem;
+    }
+}
