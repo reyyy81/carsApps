@@ -1,31 +1,11 @@
 import React from 'react'
-import './Cards.css'
+import './NewsCard.css'
 
 
-const Cards = () => {
+const NewsCard = () => {
   return (
     <div>
         <div className="card-grid">
-    {/* <div className="card"> */}
-      {/* <div className="card-header">123 Main St</div>
-      <div className="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque quisquam. Enim perspiciatis vero laudantium nemo cum!
-      </div>
-      <div className="card-footer">
-        <button className="btn">Details</button>
-        <button className="btn btn-outline">Contact Seller</button>
-      </div>
-    </div>
-    <div className="card card-shadow">
-      <div className="card-header">123 Main St</div>
-      <div className="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque quisquam. Enim perspiciatis vero laudantium nemo cum!
-      </div>
-      <div className="card-footer">
-        <button className="btn">Details</button>
-        <button className="btn btn-outline">Contact Seller</button>
-      </div> */}
-    {/* </div> */}
     <div className="card card-shadow">
       <div className="card-header card-image">
         <img src="https://media4.giphy.com/media/cfuL5gqFDreXxkWQ4o/200w.webp?cid=ecf05e470eg7h541ajh7gzoaa1lmmsvg0bygh164j3eakcfh&rid=200w.webp&ct=g" />
@@ -146,4 +126,4 @@ const Cards = () => {
   )
 }
 
-export default Cards
+export default NewsCard
